@@ -1,5 +1,7 @@
 # Standard is that main.tf is the name of the file if it's a single file or if it's the entry point file.
 
+# 1. terraform init
+
 # In each terraform file we have to import a provider and then we should create resources from it
 
 # Search for a provider at https://registry.terraform.io/
