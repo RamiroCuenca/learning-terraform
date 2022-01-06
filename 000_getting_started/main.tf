@@ -27,9 +27,14 @@ variable "instance_type" {
     type = string
 }
 
+locals {
+  # similar to input variables but hardcoded in the code
+  instance_ami = "0ed9277fb7eb570c9" # Check the region because it's different in each region!
+}
+
 
 resource "aws_instance" "my_server" {
-  ami           = "ami-0ed9277fb7eb570c9" # Check the region because it's different in each region!
+  ami           = "ami-${local.instance_ami}"
   instance_type = var.instance_type
 
   tags = { name : "MyTerraSv" }
