@@ -32,6 +32,9 @@ locals {
   instance_ami = "0ed9277fb7eb570c9" # Check the region because it's different in each region!
 }
 
+output "instance_ip_addr" {
+  value = aws_instance.my_server.public_ip
+}
 
 resource "aws_instance" "my_server" {
   ami           = "ami-${local.instance_ami}"
