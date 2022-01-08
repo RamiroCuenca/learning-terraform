@@ -7,3 +7,6 @@
 - Create a new workspace at Terraform Cloud
 - Save AWS Credentials vars at Terraform Cloud
 - Set it up at main.tf as backend
+
+3. Install providers & start project
+$ terraform init
