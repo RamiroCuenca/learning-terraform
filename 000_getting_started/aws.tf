@@ -5,6 +5,7 @@ resource "aws_instance" "my_server" {
   tags = { name : "MyTerraSv" }
 }
 
+/*
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
@@ -23,3 +24,4 @@ module "vpc" {
     Environment = "dev"
   }
 }
+*/
